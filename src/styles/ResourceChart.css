@@ -1,0 +1,85 @@
+/* Base Styles */
+.chart-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto; /* Center align on all screen sizes */
+  height: 500px;
+  width: 600px; /* Makes it adapt to smaller screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  white-space: 30px;
+}
+
+/* Chart Title */
+.chart-title {
+  font-size: 30px; /* Smaller font for mobile */
+  color: black;
+  margin-bottom: 15px;
+}
+
+/* Chart Wrapper */
+.chart-wrapper {
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .chart-container {
+    height: 450px;
+    width: 95%;
+  }
+  .chart-title {
+    font-size: 28px;
+  }
+  .chart-wrapper {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: auto; /* Adjust height based on content */
+    padding: 15px;
+    width: 95%;
+  }
+  .chart-title {
+    font-size: 24px;
+  }
+  .chart-wrapper {
+    height: 300px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+  .chart-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .chart-wrapper {
+    height: 250px;
+    padding: 10px;
+  }
+}
+
+.chart-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chart-box {
+  flex: 1 1 48%;
+  min-width: 300px;
+}
