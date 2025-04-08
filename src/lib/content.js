@@ -29,7 +29,7 @@ export const generateDynamicContent = (gramsPerVisit = 0) => {
   
   return (
     <div className="inner-real-impact">
-      <h3 className="section-title">Real-World Environmental Impact (Per 10,000 Visitors)</h3>
+      <h3 className="section-title">Real-World Environmental Impact (Per 10K Visitors)</h3>
          <div className="impact-card-list">
            {/* Waste Generation Impact */}
       <div className="content-section garbage-waste">
